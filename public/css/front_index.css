@@ -1,0 +1,61 @@
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 9px;
+}
+
+.nav>div {
+    display: flex;
+}
+
+.user_information>div {
+    display: grid;
+    justify-items: center;
+    grid-gap: 5px;
+    margin-left: 5px;
+}
+
+.menu_action {
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.logo {
+    justify-content: center;
+    cursor: pointer;
+}
+
+.user_information {
+    justify-content: flex-end;
+}
+
+.menu_action>i,
+.logo>i {
+    font-size: 31px;
+}
+
+.container_close_btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    position: fixed;
+    height: 100vw;
+    width: 300px;
+    top: 0;
+    border: 0;
+    background: #8e4747;
+    padding: 10px;
+    transition: 500ms;
+}
+
+.toogle_menu {
+    transform: translate(-340px) !important;
+}
+
+.close_menu,
+.user_information>div {
+    cursor: pointer;
+}

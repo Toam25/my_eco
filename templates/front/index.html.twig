@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FrontController!{% endblock %}
+{% block stylesheets %}
+     <link rel="stylesheet" href="{{asset('css/front_index.css')}}">
+{% endblock %}
+
+{% block body %}
+  <nav class="nav">
+     <div class="menu_action">
+      <i class="fa fa-bars"></i>
+    </div>
+     <div class="logo">
+        <i class="fa fa-shopping-bag"></i>
+         {# <img class="logo" src="{{asset('images/default_logo.png')}}"> #}
+    </div>
+     <div class="user_information">
+         <div class="">
+           <i class="fa fa-search"></i>
+           recherche
+        </div>
+        <div class="">
+            <i class="fa fa-user"></i>
+           Connexion
+        </div>
+    </div>
+  </nav>
+  {# slider #}
+  <div class="slider">
+  slider
+  </div>
+<div class="container">
+  {# menu #}
+<div class="menu">
+   <div class="container_close_btn">
+    <button class="close_menu">
+           <i class="fa fa-times"></i> 
+     </button>
+   </div>
+    <div class="container_menu">
+    </div>
+  </div>
+  {# body #}
+<div class="body">
+body
+  </div>
+  {# footer #}
+  <div class="footer">
+  footer
+  </div>
+  </div>
+{% endblock %}
