@@ -7,7 +7,7 @@
 
 {% block body %}
   <nav class="nav">
-     <div class="menu_action">
+     <div class="menu_action toggle_menu">
       <i class="fa fa-bars"></i>
     </div>
      <div class="logo">
@@ -27,13 +27,24 @@
   </nav>
   {# slider #}
   <div class="slider">
-  slider
+       <div class="container_image_header">
+       </div>
   </div>
 <div class="container">
+<div class="container_app">
+    <div class="container_image_logo">
+         
+    </div>
+       <div class="container_name">
+            <span class="name_shop">Tsena rapide.mg</span>  
+            <span class="slogan">Tout a pres pour vouts</span>
+            <span class="closing" {# openning #}>Fermer</span>
+       </div>
+</div>
   {# menu #}
-<div class="menu">
+<div class="menu toogle_menu">
    <div class="container_close_btn">
-    <button class="close_menu">
+    <button class="close_menu toggle_menu">
            <i class="fa fa-times"></i> 
      </button>
    </div>
@@ -42,11 +53,34 @@
   </div>
   {# body #}
 <div class="body">
-body
-  </div>
-  {# footer #}
+
+<div class="row">
+{% for i in 1..10 %}
+	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+		<div class="cart">
+			<div class="container_image_cart">
+				<div class="image_cart">
+					<img src="{{asset('images/8.png')}}" alt="">
+				</div>
+			</div>
+      <div class="divider"></div>
+			<div class="container_description">
+				<span class="title">Titre</span>
+				<span class="few_description">Petite description</span>
+				<span class="price">55 000Ar</span>
+			</div>
+		</div>
+	</div>
+  {% endfor %}
+</div>
+
+</div>
+</div>
+ {# footer #}
   <div class="footer">
   footer
   </div>
-  </div>
 {% endblock %}
+  {% block javascripts %}
+        <script src="{{asset('js/front_index.js')}}"></script>
+    {% endblock %}
